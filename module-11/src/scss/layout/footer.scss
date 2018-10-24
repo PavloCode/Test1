@@ -3,29 +3,26 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-}
-
-.footer-contant::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 1px;
-    background-color: $color-dark-white;
-}
-
-.footer-contant__text {
-    font-size: 14px;
-    font-family: $main-font-stack;
-    font-weight: 300;
-}
-
-.footer-contant__link {
-    text-decoration: none;
-    color: $color-red;
-    font-size: 14px;
-    font-family: $main-font-stack;
-    font-weight: 300;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $color-dark-white;
+    }
+    &__text {
+        font-size: 14px;
+        font-family: $main-font-stack;
+        font-weight: 300;
+    }
+    &__link {
+        text-decoration: none;
+        color: $color-red;
+        font-size: 14px;
+        font-family: $main-font-stack;
+        font-weight: 300;
+    }
 }
 
 .button {
