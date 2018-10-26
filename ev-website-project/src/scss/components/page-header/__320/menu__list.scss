@@ -1,16 +1,36 @@
 @media (max-width:1199px) {
-  .l-menu__list {
-    background-color: $secondary-dark-color;
-    width: 300px;
-    position: absolute;
-    top: 0;
-    right: -5px;
-    height: 0;
-    overflow: hidden;
-    z-index: 2;
-  }
-
-  .menu__list--open {
-    height: auto;
-  }
+    .l-menu__list {
+        background-color: $secondary-dark-color;
+        width: 300px;
+        position: absolute;
+        top: 0;
+        right: -5px;
+        height: 0;
+        overflow: hidden;
+        z-index: 2;
+    }
+    .menu__list--open {
+        height: auto;
+    }
+    .test-background {
+        position: fixed;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: -1200px;
+        // transition: all 0.15s;
+        transition: 0.5s;
+        background-color: rgba(255, 255, 255, 0);
+        height: 432px;
+        opacity: 0;
+        width: 1200px;
+        // z-index: 0;
+        visibility: hidden;
+        &.is-visible {
+            background: rgba(151, 151, 151, 0.534);
+            opacity: 0.4;
+            visibility: visible;
+            transition: 0.5s;
+        }
+    }
 }

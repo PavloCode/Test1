@@ -1,10 +1,12 @@
 <div class="l-header_underline container">
     <header class="l-header">
-        <a href="home-page.html" class="c-logo">Ev hub</a>
+        <a href="#" class="c-logo">Ev hub</a>
         <nav class="l-menu">
             <div class="l-menu-toggle">
-                <div class="c-burger"></div>
+                <div class="c-burger"> </div>
+                <a href="#" class="burger-box">
             </div>
+            <div class="test-background"> </div>
             <ul class="l-menu__list">
                 <li class="c-menu__item">
                     <a href="#" class="c-menu__link menu__link_drop-down">Форум</a>
@@ -47,8 +49,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script type="text/javascript">
     $('.l-menu-toggle').click(function() {
+
         $('.l-menu__list').toggleClass('menu__list--open', 600);
         $(this).toggleClass('open');
+
+        $('.test-background').toggleClass('is-visible');
+
     })
     $('.c-menu__item').click(function() {
         $(this).children("ul").slideToggle();
