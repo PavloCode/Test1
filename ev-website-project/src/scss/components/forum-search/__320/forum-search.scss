@@ -1,0 +1,33 @@
+.forum-search{
+  position: relative;
+}
+
+.forum-search__input{
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 4.8rem;
+  width: 50rem;
+  height: 5.6rem;
+  font-family: $primary-font-stack;
+  font-size: 1.5rem; 
+  letter-spacing: .01em;
+  border-width: 1px;
+  border-color: $SEARCH-FORM--border-color;
+  border-style: solid;
+}
+
+.forum-search__input::placeholder{
+  color: $SEARCH-FORM--placeholder;
+}
+
+.forum-search__icon{
+  position: absolute;
+  top: 1.6rem;
+  left: 1.6rem;
+}
+
+.search-icon{
+  width: 2.6rem;
+  height: 2.6rem;
+  fill: $search-icon--color;
+}
