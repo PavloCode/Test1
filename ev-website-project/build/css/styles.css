@@ -310,6 +310,10 @@ a {
   /* Legacy iOS */
 }
 
+.content {
+  min-height: calc(100vh - 213px);
+}
+
 .l-menu-toggle {
   position: absolute;
   top: 36px;
