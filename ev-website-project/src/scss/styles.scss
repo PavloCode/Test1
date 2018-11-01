@@ -1,13 +1,14 @@
 /*
    Import partials below
 */
-
 @import 'reset';
 @import 'fonts';
 @import 'helpers/variables';
 // COMPONENTS //
 @import 'components/container';
 @import 'components/page-header/index';
+@import 'components/message-form/index';
+@import 'components/forum-search/index.scss';
 // @import 'components/
 // @import 'components/
 // @import 'components/
@@ -15,3 +16,8 @@
 // @import 'components/
 // @import 'components/
 // @import 'components/
+
+// FONT SIZES //
+html {
+  font-size: 10px;
+}
