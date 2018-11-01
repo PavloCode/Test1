@@ -451,6 +451,7 @@ a {
   text-align: justify;
   background-color: #2e2e2e33;
   padding: 75px 0;
+  z-index: 4;
 }
 
 .register-form {
