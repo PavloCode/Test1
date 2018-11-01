@@ -1,0 +1,10 @@
+.register-form__themes-item {
+  margin-bottom: 19px;
+  & label {
+    margin-left: 28px;
+  }
+  & input,
+  label {
+    cursor: pointer;
+  }
+}

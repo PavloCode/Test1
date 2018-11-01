@@ -388,6 +388,11 @@ a {
   opacity: 0.8;
 }
 
+.c-menu__button {
+  padding: 0;
+  cursor: pointer;
+}
+
 .c-submenu__item {
   padding-bottom: 24px;
 }
@@ -429,6 +434,150 @@ a {
   background-color: #000000;
   margin-right: auto;
   margin-left: auto;
+}
+
+.form-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  text-align: justify;
+  background-color: #2e2e2e33;
+  padding: 75px 0;
+  z-index: 4;
+}
+
+.register-form {
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  padding: 72px 10%;
+}
+
+.register-form__container {
+  display: flex;
+  flex-wrap: wrap;
+  color: #777;
+}
+
+.register-form__close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 37px;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.register-form__close:hover {
+  background-color: #ddd;
+}
+
+.register-form__close:hover .register-form__close--icon {
+  fill: #f1f1f1;
+}
+
+.register-form__close--icon {
+  width: 18px;
+  height: 18px;
+  fill: #ddd;
+  transition: 0.2s linear;
+}
+
+.register-form__title {
+  font-family: "Exo 2";
+  font-weight: 400;
+  font-size: 35px;
+  margin: 0 auto;
+  color: #2e2e2e;
+}
+
+.register-form__description {
+  font-family: "Exo 2";
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 28px;
+  padding-bottom: 38px;
+  color: #2e2e2e;
+}
+
+.register-form__description--center {
+  margin: 0 auto;
+}
+
+.register-form__textinput {
+  width: 100%;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 18px;
+}
+
+.register-form__themes-list {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+}
+
+.register-form__themes-item {
+  margin-bottom: 19px;
+}
+
+.register-form__themes-item label {
+  margin-left: 28px;
+}
+
+.register-form__themes-item input,
+.register-form__themes-item label {
+  cursor: pointer;
+}
+
+.register-form__submit {
+  width: 100%;
+  height: 50px;
+  background-color: #17becf;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 33px 0 42px;
+  border: 2px solid #17becf;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.register-form__submit:hover {
+  background-color: #fff;
+  color: #17becf;
+  font-weight: 700;
+}
+
+.register-form__terms {
+  font-size: 13px;
+  line-height: 1.385;
+  letter-spacing: -0.01em;
+  text-align: justify;
+}
+
+.register-form__terms a {
+  text-decoration: none;
+  color: #6dcfdb;
 }
 
 .message-form__input {
@@ -519,6 +668,16 @@ html {
   font-size: 10px;
 }
 
+@media (min-width: 425px) {
+  .form-wrapper {
+    letter-spacing: 0.045em;
+  }
+
+  .register-form {
+    padding: 72px 15%;
+  }
+}
+
 @media (min-width: 720px) {
   .message-form__input {
     width: 72rem;
@@ -534,6 +693,25 @@ html {
 
   .l-header {
     min-width: 750px;
+  }
+
+  .register-form {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .register-form__close {
+    top: 41px;
+    right: 52px;
+  }
+
+  .form-wrapper {
+    padding: 200px 0;
+  }
+
+  .register-form {
+    padding: 72px 160px 81px;
   }
 }
 
@@ -710,6 +888,10 @@ html {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+  }
+
+  .register-form {
+    width: 900px;
   }
 
   .forum-search__input {

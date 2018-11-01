@@ -1,0 +1,27 @@
+.register-form__close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 37px;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s linear;
+  &:hover {
+    background-color: #ddd;
+  }
+  &:hover .register-form__close--icon {
+    fill: #f1f1f1;
+  }
+}
+.register-form__close--icon {
+  width: 18px;
+  height: 18px;
+  fill: #ddd;
+  transition: 0.2s linear;
+}

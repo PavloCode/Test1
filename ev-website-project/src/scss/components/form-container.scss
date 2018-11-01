@@ -1,0 +1,16 @@
+@media (max-width: 767px) {
+  .register-form {
+  }
+}
+@media (min-width: 768px) {
+  .register-form {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .register-form {
+    width: 900px;
+  }
+}
