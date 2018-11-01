@@ -32,7 +32,8 @@
                     <a href="#" class="c-menu__link c-menu__link_desktop"> Вход</a>
                 </li>
                 <li class="c-menu__item">
-                    <a href="#" class="c-menu__link c-menu__link_desktop"> Регистрация</a>
+                        <button onclick="document.getElementById('reg').style.display='block'" class="c-menu__link c-menu__link_desktop c-menu__button">Регистрация
+                        </button>
                 </li>
                 <li class="c-menu__item">
                     <a href="#" class="c-menu__link"> Информация</a>
@@ -48,15 +49,27 @@
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script type="text/javascript">
-    $('.l-menu-toggle').click(function() {
-
+    $('.l-menu-toggle').click(function () {
         $('.l-menu__list').toggleClass('menu__list--open', 600);
         $(this).toggleClass('open');
-
         $('.test-background').toggleClass('is-visible');
-
     })
-    $('.c-menu__item').click(function() {
+    $('.c-menu__item').click(function () {
         $(this).children("ul").slideToggle();
     })
+
+    $('.c-menu__button').click(function () {
+        $('.l-menu__list').toggleClass('menu__list--open');
+        $('.l-menu-toggle').toggleClass('open');
+        $('.test-background').toggleClass('is-visible');
+    })
+</script>
+<script>
+    var register = document.getElementById('reg');
+
+    window.onclick = function (event) {
+        if (event.target == register) {
+            register.style.display = "none";
+        }
+    }
 </script>
