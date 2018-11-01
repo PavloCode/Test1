@@ -32,8 +32,8 @@
                     <a href="#" class="c-menu__link c-menu__link_desktop"> Вход</a>
                 </li>
                 <li class="c-menu__item">
-                    <button onclick="document.getElementById('reg').style.display='block'" style="width:auto;" class="c-menu__link c-menu__link_desktop c-menu__button">Регистрация
-                    </button>
+                        <button onclick="document.getElementById('reg').style.display='block'" class="c-menu__link c-menu__link_desktop c-menu__button">Регистрация
+                        </button>
                 </li>
                 <li class="c-menu__item">
                     <a href="#" class="c-menu__link"> Информация</a>
@@ -50,15 +50,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script type="text/javascript">
     $('.l-menu-toggle').click(function () {
-
         $('.l-menu__list').toggleClass('menu__list--open', 600);
         $(this).toggleClass('open');
-
         $('.test-background').toggleClass('is-visible');
-
     })
     $('.c-menu__item').click(function () {
         $(this).children("ul").slideToggle();
+    })
+
+    $('.c-menu__button').click(function () {
+        $('.l-menu__list').toggleClass('menu__list--open');
+        $('.l-menu-toggle').toggleClass('open');
+        $('.test-background').toggleClass('is-visible');
     })
 </script>
 <script>
@@ -67,6 +70,7 @@
     window.onclick = function (event) {
         if (event.target == register) {
             register.style.display = "none";
+            register.style.zIndex = "2";
         }
     }
 </script>
