@@ -1,13 +1,16 @@
 @media (max-width:1199px) {
     .l-menu__list {
         background-color: $secondary-dark-color;
-        width: 300px;
+        // width: 300px;
+        padding-right: 100px;
         position: absolute;
         top: 0;
         right: -5px;
         height: 0;
         overflow: hidden;
         z-index: 2;
+        border-left: 1199px solid rgba(121, 121, 121, 0.199);
+        background-clip: padding-box;
     }
     .menu__list--open {
         height: auto;
@@ -27,11 +30,11 @@
         // z-index: 0;
         visibility: hidden;
         &.is-visible {
-            background: rgba(151, 151, 151, 0.534);
-            opacity: 0.4;
-            visibility: visible;
-            transition: 0.5s;
-            z-index: 2;
+            // background: rgba(151, 151, 151, 0.534);
+            // opacity: 0.4;
+            // visibility: visible;
+            // transition: 0.5s;
+            // z-index: 2;
         }
     }
 }
