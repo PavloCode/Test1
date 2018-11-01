@@ -579,6 +579,94 @@ a {
   color: #6dcfdb;
 }
 
+.message-form__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 12rem;
+  padding-top: 3.4rem;
+  padding-left: 2rem;
+  margin-bottom: 1.2rem;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: .01em;
+  border-width: 1px;
+  border-color: #f1f1f1;
+  border-style: solid;
+  resize: none;
+}
+
+.message-form__input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+.message-form__input::-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.message-form__input::placeholder {
+  color: #cccccc;
+}
+
+.message-form__button {
+  display: block;
+  margin: 0;
+  padding: 1.6rem 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: white;
+  background-color: #17becf;
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.forum-search {
+  position: relative;
+}
+
+.forum-search__input {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 4.8rem;
+  width: 50rem;
+  height: 5.6rem;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: .01em;
+  border-width: 1px;
+  border-color: #f1f1f1;
+  border-style: solid;
+}
+
+.forum-search__input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+.forum-search__input::-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.forum-search__input::placeholder {
+  color: #cccccc;
+}
+
+.forum-search__icon {
+  position: absolute;
+  top: 1.6rem;
+  left: 1.6rem;
+}
+
+.search-icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  fill: #cccccc;
+}
+
+html {
+  font-size: 10px;
+}
+
 @media (min-width: 425px) {
   .form-wrapper {
     letter-spacing: 0.045em;
@@ -586,6 +674,12 @@ a {
 
   .register-form {
     padding: 72px 15%;
+  }
+}
+
+@media (min-width: 720px) {
+  .message-form__input {
+    width: 72rem;
   }
 }
 
@@ -617,6 +711,23 @@ a {
 
   .register-form {
     padding: 72px 160px 81px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .message-form__input {
+    width: 97.8rem;
+    height: 17.6rem;
+    padding-top: 3rem;
+    padding-left: 3.6rem;
+    margin-bottom: 1.8rem;
+    font-size: 1.8rem;
+  }
+
+  .message-form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
 
@@ -780,6 +891,17 @@ a {
 
   .register-form {
     width: 900px;
+  }
+
+  .forum-search__input {
+    width: 49.8rem;
+    height: 5.6rem;
+    padding-left: 10rem;
+    font-size: 1.8rem;
+  }
+
+  .forum-search__icon {
+    left: 6rem;
   }
 }
 
