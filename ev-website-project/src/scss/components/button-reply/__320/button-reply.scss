@@ -1,0 +1,16 @@
+.button-reply{
+  display: inline-block;
+  margin: 0;
+  margin-right: 1rem;
+  padding: 1.6rem 4rem;
+  font-family: $desc-font-stack;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: $button-reply-text-color;
+  border-width: 1px;
+  border-color: $button-reply-border-color;
+  background-color: $button-reply-background-color;
+  border-style: solid;
+  cursor: pointer;
+}

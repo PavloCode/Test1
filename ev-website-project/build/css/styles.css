@@ -310,6 +310,28 @@ a {
   /* Legacy iOS */
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .l-menu-toggle {
   position: absolute;
   top: 36px;
@@ -471,6 +493,7 @@ a {
   background-color: #17becf;
   box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.1);
   border: none;
+  cursor: pointer;
 }
 
 .forum-search {
@@ -513,6 +536,184 @@ a {
   width: 2.6rem;
   height: 2.6rem;
   fill: #cccccc;
+}
+
+.forum-thread-section__container {
+  padding-top: 4rem;
+  padding-left: 2rem;
+  width: 72rem;
+  border-width: 1px;
+  border-color: #f1f1f1;
+  border-style: solid;
+}
+
+.thread-message:nth-child(even) .thread-message__text {
+  background-color: #fcf0f0;
+}
+
+.thread-message:nth-child(even) .thread-message__text::after {
+  border: 5px solid transparent;
+  border-bottom: 5px solid #fcf0f0;
+}
+
+.thread-message:last-child {
+  margin-bottom: 3.4rem;
+}
+
+.thread-message {
+  margin-bottom: 5rem;
+}
+
+.thread-message__message {
+  display: inline-block;
+  vertical-align: top;
+  width: 55rem;
+}
+
+.thread-message__date {
+  font-size: 1.3rem;
+  letter-spacing: .01em;
+  font-family: "Exo 2", sans-serif;
+  color: #888888;
+}
+
+.thread-message__text {
+  margin: 0;
+  margin-bottom: 2.2rem;
+  position: relative;
+  padding-top: 2.2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  letter-spacing: .01em;
+  font-family: "Exo 2", sans-serif;
+  color: #2e2e2e;
+  background-color: #ecf8f2;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
+}
+
+.thread-message__text::after {
+  content: '';
+  position: absolute;
+  left: 8rem;
+  top: -1rem;
+  border: 5px solid transparent;
+  border-bottom: 5px solid #ecf8f2;
+}
+
+.thread-message__user-box {
+  display: inline-block;
+  margin-bottom: 1.6rem;
+}
+
+.thread-message__date {
+  font-size: 1.3rem;
+  letter-spacing: .01em;
+  font-family: "Exo 2", sans-serif;
+  color: #888888;
+}
+
+.thread-message__message-box {
+  display: inline;
+}
+
+.user-avatar {
+  margin-top: 1rem;
+  width: 9rem;
+  height: 9rem;
+  margin-right: 2.4rem;
+}
+
+.user-avatar__box {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.user-box {
+  margin-bottom: 1.6rem;
+}
+
+.user-name {
+  margin-right: 7.2rem;
+  font-size: 1.5rem;
+  letter-spacing: .01em;
+  font-family: "Exo 2", sans-serif;
+  color: #17becf;
+  text-decoration: underline;
+}
+
+.user-rating {
+  display: inline-block;
+  margin-right: 1.4rem;
+  padding: .5rem 1.7rem;
+  font-size: 1.3rem;
+  letter-spacing: .01em;
+  font-family: "Exo 2", sans-serif;
+  color: #888888;
+  background-color: #fafafa;
+}
+
+.user-rating__text {
+  margin-right: 0.4rem;
+}
+
+.user-rating__icon {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.3rem;
+}
+
+.user-rating__rating {
+  margin-right: .8rem;
+}
+
+.button-reply {
+  display: inline-block;
+  margin: 0;
+  margin-right: 1rem;
+  padding: 1.6rem 4rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: #2e2e2e;
+  border-width: 1px;
+  border-color: #f1f1f1;
+  background-color: #fff;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.button-like {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-right: 2.8rem;
+  padding-left: 2.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: #2e2e2e;
+  border-width: 1px;
+  border-color: #f1f1f1;
+  background-color: #fff;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.button-like__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #17becf;
 }
 
 html {
@@ -721,6 +922,89 @@ html {
 
   .forum-search__icon {
     left: 6rem;
+  }
+
+  .forum-thread-section__container {
+    padding-top: 4rem;
+    padding-left: 2rem;
+    width: 94rem;
+  }
+
+  .thread-message:last-child {
+    margin-bottom: 8rem;
+  }
+
+  .thread-message {
+    margin-left: 12.4rem;
+    margin-bottom: 0rem;
+  }
+
+  .thread-message--main {
+    margin-left: 0rem;
+  }
+
+  .thread-message__text {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    padding-left: 3.2rem;
+    margin-bottom: 1.4rem;
+    font-size: 1.8rem;
+  }
+
+  .thread-message__text::after {
+    content: '';
+    position: absolute;
+    left: 9.3rem;
+    top: -1.2rem;
+    border: 6px solid transparent;
+    border-bottom: 6px solid #ecf8f2;
+  }
+
+  .thread-message__message {
+    width: 65rem;
+  }
+
+  .thread-message--main > .thread-message__message {
+    width: 77.2rem;
+  }
+
+  .thread-message__user-info {
+    padding-top: 4.4rem;
+    padding-left: .6rem;
+  }
+
+  .thread-message__buttons {
+    text-align: right;
+  }
+
+  .thread-message__text {
+    margin-left: .8rem;
+    margin-bottom: 1.8rem;
+    width: auto;
+  }
+
+  .thread-message__user-info {
+    padding-top: 4.4rem;
+    padding-left: .6rem;
+  }
+
+  .thread-message__user-box {
+    margin-left: .8rem;
+    margin-top: 3.4rem;
+    margin-bottom: 4.6rem;
+  }
+
+  .thread-message__buttons {
+    text-align: right;
+  }
+
+  .user-avatar {
+    margin-top: 0rem;
+  }
+
+  .user-name {
+    font-size: 1.8rem;
+    margin-right: 1rem;
   }
 }
 

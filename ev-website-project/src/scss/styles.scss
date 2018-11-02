@@ -3,12 +3,22 @@
 */
 @import 'reset';
 @import 'fonts';
-@import 'helpers/variables';
+@import 'helpers/variables.scss';
 // COMPONENTS //
 @import 'components/container';
+@import 'components/visually-hidden.scss';
+@import 'components/clearfix.scss';
 @import 'components/page-header/index';
 @import 'components/message-form/index';
 @import 'components/forum-search/index.scss';
+@import 'components/forum-thread-section/index.scss';
+@import 'components/thread-message/index.scss';
+@import 'components/user-avatar/index.scss';
+@import 'components/user-box/index.scss';
+@import 'components/user-name/index.scss';
+@import 'components/user-rating/index.scss';
+@import 'components/button-reply/index.scss';
+@import 'components/button-like/index.scss';
 // @import 'components/
 // @import 'components/
 // @import 'components/

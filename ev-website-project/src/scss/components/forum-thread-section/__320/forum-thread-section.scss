@@ -1,0 +1,21 @@
+.forum-thread-section__container{
+  padding-top: 4rem;
+  padding-left: 2rem;
+  width: 72rem;
+  border-width: 1px;
+  border-color: $FORUM-THREAD--border-color;
+  border-style: solid;
+}
+
+.thread-message:nth-child(even) .thread-message__text {
+  background-color: $thread-message--even-background-color;
+
+  &::after {
+    border: 5px solid transparent; 
+    border-bottom: 5px solid $thread-message--even-background-color;
+  }
+}
+
+.thread-message:last-child{
+  margin-bottom: 3.4rem;
+}

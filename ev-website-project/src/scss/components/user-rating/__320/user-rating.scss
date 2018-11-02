@@ -1,0 +1,24 @@
+.user-rating{
+  display: inline-block;
+  margin-right: 1.4rem;
+  padding: .5rem 1.7rem;
+  font-size: 1.3rem;
+  letter-spacing: .01em;
+  font-family: $primary-font-stack;
+  color: $user-rating__text-color;
+  background-color: $user-rating__background-color;
+}
+
+.user-rating__text{
+  margin-right: 0.4rem;
+}
+
+.user-rating__icon {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.3rem;
+}
+
+.user-rating__rating{
+  margin-right: .8rem;
+}
