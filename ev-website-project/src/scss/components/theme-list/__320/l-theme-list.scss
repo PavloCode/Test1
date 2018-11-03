@@ -1,0 +1,43 @@
+.l-theme_box{
+  width: 498px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 10px 0px;
+}
+
+.c-theme__list{
+  padding-left: 60px;
+}
+
+.c-theme-list__name {
+  font-family: $primary-font-stack;
+  font-size: 24px;
+  letter-spacing: .03em;
+  text-align: center;
+  margin-bottom: 38px;
+  color: $theme-list__name;
+}
+
+.c-theme-list__text {
+  display: block;
+  font-size: 13px;
+  letter-spacing: .08em;
+  margin-top: 19px;
+  margin-left: 14px;
+  text-shadow: 0px 4px 7.52px rgba(2, 2, 2, 0.15);
+}
+
+.l-theme-list__button {
+  height: 50px;
+  display: flex;
+  margin-bottom: 32px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &:last-of-type {
+    padding-bottom: 77px;
+  }
+}

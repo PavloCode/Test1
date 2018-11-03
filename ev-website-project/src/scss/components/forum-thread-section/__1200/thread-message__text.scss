@@ -1,0 +1,20 @@
+@media (min-width: 1200px) {
+  .thread-message__text {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    padding-left: 3.2rem;
+    font-size: 1.8rem;
+    margin-left: 0.8rem;
+    margin-bottom: 1.8rem;
+    width: auto;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 9.3rem;
+      top: -1.2rem;
+      border: 6px solid transparent;
+      border-bottom: 6px solid $thread-message--odd-background-color;
+    }
+  }
+}

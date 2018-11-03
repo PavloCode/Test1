@@ -1,5 +1,39 @@
 @import '__320/forum-thread-section.scss';
+@import '__320/forum-thread-section__container.scss';
 
-// @import '__768/forum-thread-section.scss';
+@import '__320/thread-message.scss';
+@import '__320/thread-message__message.scss';
+@import '__320/thread-message__date.scss';
+@import '__320/thread-message__text.scss';
+@import '__320/thread-message__user-box.scss';
+@import '__320/thread-message__message-box.scss';
+
+@import '__320/user-avatar.scss';
+@import '__320/user-avatar__box.scss';
+
+@import '__320/user-box.scss';
+
+@import '__320/user-name.scss';
+
+@import '__320/user-rating.scss';
+@import '__320/user-rating__text.scss';
+@import '__320/user-rating__icon.scss';
+@import '__320/user-rating__rating.scss';
+
+@import '__320/button-reply.scss';
+@import '__320/button-like.scss';
+@import '__320/button-like__icon.scss';
 
 @import '__1200/forum-thread-section.scss';
+@import '__1200/forum-thread-section__container.scss';
+
+@import '__1200/thread-message.scss';
+@import '__1200/thread-message__message.scss';
+@import '__1200/thread-message__text.scss';
+@import '__1200/thread-message__user-box.scss';
+@import '__1200/thread-message__user-info.scss';
+@import '__1200/thread-message__buttons.scss';
+
+@import '__1200/user-avatar.scss';
+
+@import '__1200/user-name.scss';
