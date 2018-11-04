@@ -1,4 +1,6 @@
 @import '__320/forum-thread-section.scss';
+@import '__320/forum-thread-section__header.scss';
+@import '__320/forum-thread-section__remind.scss';
 @import '__320/forum-thread-section__container.scss';
 
 @import '__320/thread-message.scss';
@@ -26,6 +28,11 @@
 
 @import '__1200/forum-thread-section.scss';
 @import '__1200/forum-thread-section__container.scss';
+@import '__1200/search-section-header-container.scss';
+@import '__1200/forum-thread-section__header.scss';
+@import '__1200/forum-thread-section__remind.scss';
+
+@import '__1200/forum-thread-section-others.scss';
 
 @import '__1200/thread-message.scss';
 @import '__1200/thread-message__message.scss';
@@ -37,3 +44,5 @@
 @import '__1200/user-avatar.scss';
 
 @import '__1200/user-name.scss';
+
+@import '__1920/search-section-header-container.scss';

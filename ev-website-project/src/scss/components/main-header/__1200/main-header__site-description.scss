@@ -1,0 +1,12 @@
+@media (min-width: 1200px) {
+  .main-header__site-description {
+    display: block;
+    margin-bottom: 8rem;
+    font-size: 2.3rem;
+    font-family: $primary-font-stack;
+    color: $header-text-color;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: .05em;
+  }
+}

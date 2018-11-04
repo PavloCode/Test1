@@ -1,54 +1,57 @@
 .l-menu-toggle {
-    position: absolute;
-    top: 36px;
-    right: 15px;
-    cursor: pointer;
+  position: absolute;
+  top: 36px;
+  right: 15px;
+  cursor: pointer;
 }
 
 .burger-box {
-    z-index: 999;
-    position: absolute;
-    // position: fixed;
-    top: -12px;
-    left: -40px;
-    width: 40px;
-    height: 34px;
-    cursor: pointer;
-    // outline: 2px solid red;
+  z-index: 999;
+  position: absolute;
+  // position: fixed;
+  top: -12px;
+  left: -40px;
+  width: 40px;
+  height: 34px;
+  cursor: pointer;
+  // outline: 2px solid red;
 }
 
 .c-burger {
+  background-color: #444444;
+  height: 2px;
+  width: 40px;
+  position: absolute;
+  z-index: 3;
+  right: 0;
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
     background-color: #444444;
     height: 2px;
     width: 40px;
-    position: absolute;
-    z-index: 3;
-    right: 0;
-    &::after,
-    &::before {
-        content: '';
-        display: block;
-        background-color: #444444;
-        height: 2px;
-        width: 40px;
-        transition: all 0.5s linear;
-    }
-    &::before {
-        transform: translateY(-10px);
-    }
-    &::after {
-        transform: translateY(8px);
-    }
+    transition: all 0.5s linear;
+  }
+
+  &::before {
+    transform: translateY(-10px);
+  }
+  
+  &::after {
+    transform: translateY(8px);
+  }
 }
 
 .open .c-burger {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .open .c-burger::before {
-    opacity: 0;
+  opacity: 0;
 }
 
 .open .c-burger::after {
-    transform: translateY(-2px) rotate(-90deg);
+  transform: translateY(-2px) rotate(-90deg);
 }

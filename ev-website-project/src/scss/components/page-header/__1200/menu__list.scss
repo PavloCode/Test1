@@ -1,7 +1,9 @@
 @media (min-width:1200px) {
   .l-menu__list {
+    // padding-right: 28px;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
+    justify-content: space-between;
   }
 }

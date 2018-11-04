@@ -6,9 +6,11 @@
 @import 'helpers/variables.scss';
 // COMPONENTS //
 @import 'components/container';
+@import 'components/container__forum.scss';
 @import 'components/visually-hidden.scss';
 @import 'components/clearfix.scss';
 @import 'components/page-header/index';
+@import 'components/main-header/index.scss';
 // Register Form
 @import 'components/form-container';
 @import 'components/register-form/index';

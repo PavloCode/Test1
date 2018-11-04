@@ -1,0 +1,21 @@
+.container__forum {
+  margin: 0 auto;
+  width: 720px;
+}
+
+@media (min-width: 1200px) {
+  .container__forum {
+    margin-right: 0;
+    margin-left: 0;
+    width: auto;
+    // display: flex;
+    // flex-wrap: wrap;
+    // width: 1150px;
+  }
+}
+
+@media (min-width: 1950px) {
+  .container__forum {
+    // width: 1515px;
+  }
+}

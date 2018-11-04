@@ -1,0 +1,13 @@
+@media (min-width: 1200px) {
+  .forum-thread-section__remind{
+    margin-bottom: 0rem;
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: .02em;
+    text-align: center;
+  }
+  
+  .forum-thread-section__remind>button{
+    font-size: inherit;
+  }
+}

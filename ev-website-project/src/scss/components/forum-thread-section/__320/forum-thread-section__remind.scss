@@ -1,0 +1,20 @@
+.forum-thread-section__remind{
+  margin-bottom: 4.8rem;
+  font-size: 1.4rem;
+  font-family: $desc-font-stack;
+  color: $forum-thread-section__header-color;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: .02em;
+  text-align: center;
+}
+
+.forum-thread-section__remind>button{
+  font-size: inherit;
+  font-family: inherit;
+  color: $forum-thread-section__remind-link-color;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-decoration: underline;
+}

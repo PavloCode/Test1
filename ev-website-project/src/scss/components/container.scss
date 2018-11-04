@@ -1,24 +1,30 @@
 @media (max-width: 767px) {
-    .container {
-        padding-right: 5px;
-        padding-left: 5px;
-    }
+  .container {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
 }
 
 @media (min-width: 768px) {
-    .container {
-        width: 750px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+  .container {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media (min-width: 1200px) {
-    .container {
-        width: 1190px;
-    }
+  .container {
+    width: 1190px;
+  }
+}
+
+@media (min-width: 1950px) {
+  .container {
+    width: 1920px;
+  }
 }
 
 .content {
-    min-height: calc(100vh - 213px);
+  min-height: calc(100vh - 213px);
 }
