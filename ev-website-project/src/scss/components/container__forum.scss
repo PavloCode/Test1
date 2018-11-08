@@ -7,15 +7,15 @@
   .container__forum {
     margin-right: 0;
     margin-left: 0;
-    width: auto;
+    //width: auto;
     // display: flex;
     // flex-wrap: wrap;
     // width: 1150px;
   }
 }
 
-@media (min-width: 1950px) {
+@media (min-width: 1540px) {
   .container__forum {
-    // width: 1515px;
+    //width: 1515px;
   }
 }

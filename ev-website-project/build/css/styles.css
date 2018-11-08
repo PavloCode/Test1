@@ -1273,7 +1273,6 @@ html {
   .container__forum {
     margin-right: 0;
     margin-left: 0;
-    width: auto;
   }
 
   .l-menu-toggle {
@@ -1508,9 +1507,6 @@ html {
   }
 
   .search-section-header-container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 7.6rem;
     width: 1170px;
@@ -1608,6 +1604,7 @@ html {
     top: 0;
     width: 498px;
     border: 1px solid #f1f1f1;
+    margin: 0 auto;
   }
 
   .c-theme-list__name {
@@ -1619,7 +1616,7 @@ html {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1540px) {
   .forum-thread-section-others {
     width: 1515px;
     display: flex;
@@ -1628,6 +1625,10 @@ html {
 
   .search-section-header-container {
     width: 1515px;
+  }
+
+  .l-theme {
+    margin: 0;
   }
 }
 
