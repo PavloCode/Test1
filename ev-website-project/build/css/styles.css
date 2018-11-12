@@ -1249,19 +1249,8 @@ html {
 
 @media (min-width: 1170px) {
   .message-form {
-    order: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .message-form__input {
-    width: 98rem;
-    height: 17.6rem;
-    padding-top: 3rem;
-    padding-left: 3.6rem;
-    margin-bottom: 2rem;
-    font-size: 1.8rem;
+    margin: 0 auto;
+    display: inline-block;
   }
 }
 
@@ -1271,8 +1260,9 @@ html {
   }
 
   .container__forum {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
   }
 
   .l-menu-toggle {
@@ -1471,12 +1461,6 @@ html {
     width: 900px;
   }
 
-  .message-form__container {
-    display: flex;
-    margin: 0;
-    margin-bottom: 6.4rem;
-  }
-
   .forum-search__input {
     width: 49.8rem;
     height: 5.6rem;
@@ -1507,6 +1491,9 @@ html {
   }
 
   .search-section-header-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 7.6rem;
     width: 1170px;
@@ -1617,6 +1604,32 @@ html {
 }
 
 @media (min-width: 1540px) {
+  .container {
+    width: 1515px;
+  }
+
+  .message-form {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .message-form__input {
+    width: 98rem;
+    height: 17.6rem;
+    padding-top: 3rem;
+    padding-left: 3.6rem;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .message-form__container {
+    display: flex;
+    margin: 0;
+    margin-bottom: 6.4rem;
+  }
+
   .forum-thread-section-others {
     width: 1515px;
     display: flex;

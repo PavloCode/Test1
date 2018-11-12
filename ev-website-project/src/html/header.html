@@ -1,15 +1,12 @@
 <div class="l-header_underline container">
-    <header class="l-header">
-        <a href="#" class="c-logo">Ev hub</a>
+    <header class="l-header"><a href="#" class="c-logo">Ev hub</a>
         <nav class="l-menu">
             <div class="l-menu-toggle">
-                <div class="c-burger"> </div>
-                <a href="#" class="burger-box"></a>
+                <div class="c-burger"></div><a href="#" class="burger-box"></a>
             </div>
-            <div class="test-background"> </div>
+            <div class="test-background"></div>
             <ul class="l-menu__list">
-                <li class="c-menu__item">
-                    <a href="#" class="c-menu__link menu__link_drop-down">Форум</a>
+                <li class="c-menu__item"><a href="#" class="c-menu__link menu__link_drop-down">Форум</a>
                     <ul class="l-submenu-list">
                         <li class="c-submenu__item"><a href="#" class="c-submenu__link">Электрокары, гибриды</a></li>
                         <li class="c-submenu__item"><a href="#" class="c-submenu__link">Зарядные станции</a></li>
@@ -19,33 +16,19 @@
                         <li class="c-submenu__item"><a href="#" class="c-submenu__link">Частые вопросы</a></li>
                     </ul>
                 </li>
-                <li class="c-menu__item">
-                    <a href="calendar-page.html" class="c-menu__link"> Календарь мероприятий</a>
-                </li>
-                <li class="c-menu__item">
-                    <a href="#" class="c-menu__link"> Новости</a>
-                </li>
-                <li class="c-menu__item">
-                    <a href="#" class="c-menu__link"> Полезные ссылки</a>
-                </li>
-                <li class="c-menu__item">
-                    <a href="#" class="c-menu__link c-menu__link_desktop"> Вход</a>
-                </li>
-                <li class="c-menu__item">
-                    <a href="#" class="c-menu__link c-menu__link_desktop c-menu__button" onclick="document.getElementById('reg').style.display='block'"> Регистрация</a>
-                </li>
-                <li class="c-menu__item">
-                    <a href="#" class="c-menu__link"> Информация</a>
-                </li>
+                <li class="c-menu__item"><a href="calendar-page.html" class="c-menu__link">Календарь мероприятий</a></li>
+                <li class="c-menu__item"><a href="#" class="c-menu__link">Новости</a></li>
+                <li class="c-menu__item"><a href="#" class="c-menu__link">Полезные ссылки</a></li>
+                <li class="c-menu__item"><a href="#" class="c-menu__link c-menu__link_desktop">Вход</a></li>
+                <li class="c-menu__item"><a href="#" class="c-menu__link c-menu__link_desktop" onclick="document.getElementById('reg').style.display='block'">Регистрация</a></li>
+                <li class="c-menu__item"><a href="#" class="c-menu__link">Информация</a></li>
             </ul>
         </nav>
     </header>
 </div>
-
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script type="text/javascript">
-    $('.l-menu-toggle').click(function () {
+<script type="text/javascript">$('.l-menu-toggle').click(function () {
         $('.l-menu__list').toggleClass('menu__list--open', 600);
         $(this).toggleClass('open');
         $('.test-background').toggleClass('is-visible');
@@ -58,14 +41,11 @@
         $('.l-menu__list').toggleClass('menu__list--open');
         $('.l-menu-toggle').toggleClass('open');
         $('.test-background').toggleClass('is-visible');
-    })
-</script>
-<script>
-    var register = document.getElementById('reg');
+    })</script>
+<script>var register = document.getElementById('reg');
 
     window.onclick = function (event) {
         if (event.target == register) {
             register.style.display = "none";
         }
-    }
-</script>
+    }</script>
