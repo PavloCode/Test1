@@ -1,13 +1,16 @@
 .l-theme_box{
-  width: 498px;
+  //width: 498px;
+  max-width: 500px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 4.6rem;
   padding: 30px 10px 0px;
+  //padding-right: 70px;
 }
 
 .c-theme__list{
   padding-left: 60px;
+  padding-right: 60px;
 }
 
 .c-theme-list__name {

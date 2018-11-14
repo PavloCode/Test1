@@ -315,7 +315,8 @@ a {
 
 .container__forum {
   margin: 0 auto;
-  width: 720px;
+  min-width: 320px;
+  max-width: 720px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -617,12 +618,13 @@ input[type="radio"].visually-hidden {
 }
 
 .message-form__input {
+  width: 100%;
   display: block;
   box-sizing: border-box;
   height: 12rem;
   padding-top: 3.4rem;
   padding-left: 2rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
   font-family: "Exo 2", sans-serif;
   font-size: 1.5rem;
   letter-spacing: .01em;
@@ -647,7 +649,6 @@ input[type="radio"].visually-hidden {
 .message-form__button {
   display: block;
   margin: 0;
-  margin-left: 1.6rem;
   padding: 1.6rem 2rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1.3rem;
@@ -665,12 +666,14 @@ input[type="radio"].visually-hidden {
   margin-bottom: 6.6rem;
   padding-left: 0rem;
   text-align: center;
+  width: 100%;
 }
 
 .forum-search {
   position: relative;
   margin: 0 auto;
-  width: 50rem;
+  max-width: 50rem;
+  width: 100%;
 }
 
 .forum-search__container {
@@ -765,7 +768,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 3rem;
   padding-top: 2.8rem;
   padding-left: 2rem;
-  width: 72rem;
   border-width: 1px;
   border-color: #f1f1f1;
   border-style: solid;
@@ -778,7 +780,8 @@ input[type="radio"].visually-hidden {
 .thread-message__message {
   display: inline-block;
   vertical-align: top;
-  width: 55rem;
+  width: 100%;
+  max-width: 55rem;
 }
 
 .thread-message__date {
@@ -957,7 +960,7 @@ input[type="radio"].visually-hidden {
   font-size: 19px;
   text-transform: uppercase;
   padding-top: 65px;
-  padding-bottom: 34px;
+  padding-bottom: 40px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   display: inline-block;
@@ -1048,7 +1051,7 @@ input[type="radio"].visually-hidden {
 }
 
 .c-button__button-name {
-  width: 300px;
+  width: 100%;
   height: 50px;
   text-transform: uppercase;
   font-weight: 600;
@@ -1148,7 +1151,7 @@ input[type="radio"].visually-hidden {
 }
 
 .l-theme_box {
-  width: 498px;
+  max-width: 500px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 4.6rem;
@@ -1157,6 +1160,7 @@ input[type="radio"].visually-hidden {
 
 .c-theme__list {
   padding-left: 60px;
+  padding-right: 60px;
 }
 
 .c-theme-list__name {
@@ -1206,12 +1210,6 @@ html {
   }
 }
 
-@media (min-width: 720px) {
-  .message-form__input {
-    width: 72rem;
-  }
-}
-
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -1247,13 +1245,6 @@ html {
   }
 }
 
-@media (min-width: 1170px) {
-  .message-form {
-    margin: 0 auto;
-    display: inline-block;
-  }
-}
-
 @media (min-width: 1200px) {
   .container {
     width: 1190px;
@@ -1262,7 +1253,7 @@ html {
   .container__forum {
     margin-right: auto;
     margin-left: auto;
-    width: auto;
+    max-width: 978px;
   }
 
   .l-menu-toggle {
@@ -1486,8 +1477,6 @@ html {
     margin-left: 0;
     margin-right: 0;
     padding-top: 4rem;
-    padding-left: 4.8rem;
-    width: 98rem;
   }
 
   .search-section-header-container {
@@ -1533,11 +1522,11 @@ html {
   }
 
   .thread-message__message {
-    width: 65rem;
+    max-width: 65rem;
   }
 
   .thread-message--main > .thread-message__message {
-    width: 77.2rem;
+    max-width: 77.2rem;
   }
 
   .thread-message__text {
@@ -1547,7 +1536,7 @@ html {
     font-size: 1.8rem;
     margin-left: 0.8rem;
     margin-bottom: 1.8rem;
-    width: auto;
+    width: 100%;
   }
 
   .thread-message__text::after {
@@ -1571,6 +1560,8 @@ html {
   }
 
   .thread-message__buttons {
+    display: flex;
+    justify-content: flex-end;
     text-align: right;
   }
 
@@ -1608,6 +1599,11 @@ html {
     width: 1515px;
   }
 
+  .container__forum {
+    width: 65%;
+    max-width: 978px;
+  }
+
   .message-form {
     order: 1;
     display: flex;
@@ -1616,7 +1612,6 @@ html {
   }
 
   .message-form__input {
-    width: 98rem;
     height: 17.6rem;
     padding-top: 3rem;
     padding-left: 3.6rem;
@@ -1625,7 +1620,6 @@ html {
   }
 
   .message-form__container {
-    display: flex;
     margin: 0;
     margin-bottom: 6.4rem;
   }

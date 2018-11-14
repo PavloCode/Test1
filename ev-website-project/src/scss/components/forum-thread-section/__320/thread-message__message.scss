@@ -1,5 +1,7 @@
 .thread-message__message{
   display: inline-block;
   vertical-align: top;
-  width: 55rem;
+  //width: 55rem;
+  width: 100%;
+  max-width: 55rem;
 }

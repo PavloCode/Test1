@@ -1,9 +1,9 @@
 @media (min-width: 1200px) {
   .thread-message__message{
-    width: 65rem;
+    max-width: 65rem;
   }
 
   .thread-message--main>.thread-message__message{
-    width: 77.2rem;
+    max-width: 77.2rem;
   }
 }
