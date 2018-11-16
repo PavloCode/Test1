@@ -1,23 +1,33 @@
-@media (min-width: 1200px) {
-  .forum-thread-section-others{
+@media (min-width: 1024px) {
+  .forum-thread-section-others {
     position: relative;
-    width: 1170px;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     margin-bottom: 64px;
   }
 }
+
+@media (min-width: 1200px) {
+  .forum-thread-section-others {
+    position: relative;
+    //width: 1170px;
+    //display: flex;
+    //flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+}
+
 @media (min-width: 1540px) {
-  .forum-thread-section-others{
+  .forum-thread-section-others {
     width: 1515px;
     display: flex;
     justify-content: space-between;
     // flex-wrap: wrap;
-
   }
 }
 
-.forum-thread-section-others{
+.forum-thread-section-others {
   margin: 0 auto;
   // display: flex;
 }

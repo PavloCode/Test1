@@ -1,11 +1,11 @@
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .l-theme {
-    //height: 506px;
+    height: 100%;
     position: sticky;
     right: 0;
     top: 0;
     width: 498px;
-    //border: 1px solid rgb(241, 241, 241);
+    border: 1px solid rgb(241, 241, 241);
     margin: 0 auto;
     margin-left: 15px;
   }
@@ -19,3 +19,4 @@
     margin-bottom: 0;
   }
 }
+

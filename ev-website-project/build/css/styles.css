@@ -310,6 +310,7 @@ a {
 }
 
 .content {
+  padding: 0 15px;
   min-height: calc(100vh - 213px);
 }
 
@@ -768,6 +769,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 3rem;
   padding-top: 2.8rem;
   padding-left: 2rem;
+  padding-right: 3.4rem;
   border-width: 1px;
   border-color: #f1f1f1;
   border-style: solid;
@@ -843,6 +845,7 @@ input[type="radio"].visually-hidden {
 .user-name {
   margin-right: 7.2rem;
   font-size: 1.5rem;
+  line-height: 1.5;
   letter-spacing: .01em;
   font-family: "Exo 2", sans-serif;
   color: #17becf;
@@ -1017,7 +1020,6 @@ input[type="radio"].visually-hidden {
 
 .c-button__button-arrow {
   width: 59px;
-  height: 50px;
 }
 
 .arrow,
@@ -1030,18 +1032,21 @@ input[type="radio"].visually-hidden {
   content: '';
   display: inline-block;
   background-repeat: no-repeat;
-  background-position: 10px 17px;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 37px;
-  height: 18px;
-  position: absolute;
   left: 0;
   top: 0;
-  padding: 25px 30px;
+  min-width: 60px;
+  height: 100%;
+  min-height: 50px;
 }
 
 .l-theme-list__button {
   position: relative;
-  padding-left: 59px;
+  width: 71%;
+  height: auto;
+  min-height: 50px;
   transition: 0.1s linear;
   opacity: 1;
 }
@@ -1051,12 +1056,14 @@ input[type="radio"].visually-hidden {
 }
 
 .c-button__button-name {
+  display: flex;
+  align-items: center;
   width: 100%;
-  height: 50px;
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Exo 2", sans-serif;
   font-size: 12px;
+  line-height: 1.5;
 }
 
 .c-position-arrow {
@@ -1154,13 +1161,8 @@ input[type="radio"].visually-hidden {
   max-width: 500px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 4.6rem;
+  margin-bottom: 7.4rem;
   padding: 30px 10px 0px;
-}
-
-.c-theme__list {
-  padding-left: 60px;
-  padding-right: 60px;
 }
 
 .c-theme-list__name {
@@ -1176,13 +1178,12 @@ input[type="radio"].visually-hidden {
   display: block;
   font-size: 13px;
   letter-spacing: .08em;
-  margin-top: 19px;
   margin-left: 14px;
   text-shadow: 0px 4px 7.52px rgba(2, 2, 2, 0.15);
 }
 
 .l-theme-list__button {
-  height: 50px;
+  margin: 0 auto;
   display: flex;
   margin-bottom: 32px;
   cursor: pointer;
@@ -1190,10 +1191,6 @@ input[type="radio"].visually-hidden {
 
 .l-theme-list__button:active {
   opacity: 0.7;
-}
-
-.l-theme-list__button:last-of-type {
-  padding-bottom: 77px;
 }
 
 html {
@@ -1237,11 +1234,40 @@ html {
   }
 
   .register-form {
-    padding: 72px 160px 81px;
+    padding: 140px 160px 81px;
   }
 
   .c-footer-social__link {
     font-size: 13px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .forum-thread-section-others {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-bottom: 64px;
+  }
+
+  .l-theme {
+    height: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    right: 0;
+    top: 0;
+    width: 498px;
+    border: 1px solid #f1f1f1;
+    margin: 0 auto;
+    margin-left: 15px;
+  }
+
+  .c-theme-list__name {
+    letter-spacing: .01em;
+  }
+
+  .l-theme-list__button:last-of-type {
+    margin-bottom: 0;
   }
 }
 
@@ -1506,9 +1532,6 @@ html {
 
   .forum-thread-section-others {
     position: relative;
-    width: 1170px;
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 64px;
   }
 
@@ -1575,14 +1598,13 @@ html {
   }
 
   .l-theme {
-    height: 506px;
     position: -webkit-sticky;
     position: sticky;
     right: 0;
     top: 0;
     width: 498px;
-    border: 1px solid #f1f1f1;
     margin: 0 auto;
+    margin-left: 15px;
   }
 
   .c-theme-list__name {
@@ -1636,6 +1658,8 @@ html {
 
   .l-theme {
     margin: 0;
+    margin-left: 15px;
+    border: 1px solid #f1f1f1;
   }
 }
 
@@ -1726,5 +1750,11 @@ html {
   .container {
     padding-right: 5px;
     padding-left: 5px;
+  }
+}
+
+@media (min-width: 630px) and (max-width: 775px) {
+  .thread-message__message {
+    max-width: 72rem;
   }
 }

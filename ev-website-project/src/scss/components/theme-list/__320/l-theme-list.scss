@@ -3,14 +3,15 @@
   max-width: 500px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 4.6rem;
+  margin-bottom: 7.4rem;
   padding: 30px 10px 0px;
   //padding-right: 70px;
 }
 
 .c-theme__list{
-  padding-left: 60px;
-  padding-right: 60px;
+  // padding-left: 60px;
+  // padding-right: 60px;
+  //margin: 0 auto;
 }
 
 .c-theme-list__name {
@@ -26,13 +27,14 @@
   display: block;
   font-size: 13px;
   letter-spacing: .08em;
-  margin-top: 19px;
+  //margin-top: 19px;
   margin-left: 14px;
   text-shadow: 0px 4px 7.52px rgba(2, 2, 2, 0.15);
 }
 
 .l-theme-list__button {
-  height: 50px;
+  //height: 50px;
+  margin: 0 auto;
   display: flex;
   margin-bottom: 32px;
   cursor: pointer;
@@ -42,6 +44,6 @@
   }
 
   &:last-of-type {
-    padding-bottom: 77px;
+    //padding-bottom: 77px;
   }
 }
