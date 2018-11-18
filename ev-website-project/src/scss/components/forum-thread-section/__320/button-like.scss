@@ -12,8 +12,22 @@
   letter-spacing: .08em;
   color: $button-like-text-color;
   border-width: 1px;
-  border-color: $button-reply-border-color;
-  background-color: $button-reply-background-color;
+  border-color: $button-like-border-color;
+  background-color: $button-like-background-color;
   border-style: solid;
   cursor: pointer;
+  transition: 0.3s linear;
+
+  &:hover {
+    background-color: $button-like-background-color--hover;
+    //color: $button-reply-text-color--hover;
+    border: 1px solid $button-like-background-color--hover;
+    transition: 0.3s linear;
+    //font-weight: 700;
+  }
+
+  &:hover .button-like__icon{
+    fill: $button-like__icon-color--hover;
+    transition: 0.3s linear;
+  }
 }

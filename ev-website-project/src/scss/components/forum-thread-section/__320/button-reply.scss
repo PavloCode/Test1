@@ -13,4 +13,13 @@
   background-color: $button-reply-background-color;
   border-style: solid;
   cursor: pointer;
+  transition: 0.3s linear;
+
+  &:hover {
+    background-color: $button-reply-background-color--hover;
+    color: $button-reply-text-color--hover;
+    border: 1px solid $button-reply-border-color--hover;
+    transition: 0.3s linear;
+    //font-weight: 700;
+  }
 }

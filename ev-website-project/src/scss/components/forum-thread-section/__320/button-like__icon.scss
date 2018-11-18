@@ -7,4 +7,12 @@
   width: 2.5rem;
   height: 2.5rem;
   fill: $button-like__icon-color;
+  transition: 0.3s linear;
+
+  &:hover {
+    fill: $button-like__icon-color--hover;
+    transition: 0.3s linear;
+    //font-weight: 700;
+  }
+
 }

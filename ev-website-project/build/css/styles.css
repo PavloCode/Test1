@@ -469,6 +469,11 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
 }
 
+.c-menu__link--current {
+  font-weight: 800;
+  letter-spacing: .75em;
+}
+
 .main-header {
   font-size: 0px;
   opacity: 0;
@@ -657,9 +662,17 @@ input[type="radio"].visually-hidden {
   letter-spacing: .08em;
   color: white;
   background-color: #17becf;
+  border: 2px solid #17becf;
   box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.1);
-  border: none;
   cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.message-form__button:hover {
+  background-color: white;
+  color: #17becf;
+  border: 2px solid #17becf;
+  transition: 0.3s linear;
 }
 
 .message-form__container {
@@ -889,9 +902,17 @@ input[type="radio"].visually-hidden {
   color: #2e2e2e;
   border-width: 1px;
   border-color: #f1f1f1;
-  background-color: #fff;
+  background-color: white;
   border-style: solid;
   cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.button-reply:hover {
+  background-color: #17becf;
+  color: white;
+  border: 1px solid #17becf;
+  transition: 0.3s linear;
 }
 
 .button-like {
@@ -909,9 +930,21 @@ input[type="radio"].visually-hidden {
   color: #2e2e2e;
   border-width: 1px;
   border-color: #f1f1f1;
-  background-color: #fff;
+  background-color: white;
   border-style: solid;
   cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.button-like:hover {
+  background-color: #17becf;
+  border: 1px solid #17becf;
+  transition: 0.3s linear;
+}
+
+.button-like:hover .button-like__icon {
+  fill: white;
+  transition: 0.3s linear;
 }
 
 .button-like__icon {
@@ -924,6 +957,12 @@ input[type="radio"].visually-hidden {
   width: 2.5rem;
   height: 2.5rem;
   fill: #17becf;
+  transition: 0.3s linear;
+}
+
+.button-like__icon:hover {
+  fill: white;
+  transition: 0.3s linear;
 }
 
 .forum-thread-section-others {
@@ -1209,7 +1248,8 @@ html {
 
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    min-width: 750px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1273,7 +1313,8 @@ html {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1190px;
+    min-width: 1190px;
+    width: 100%;
   }
 
   .container__forum {
@@ -1446,6 +1487,13 @@ html {
     margin-bottom: 88px;
   }
 
+  .c-menu__link--current {
+    color: #000;
+    font-weight: 800;
+    opacity: 1;
+    letter-spacing: .75em;
+  }
+
   .main-header {
     font-size: 10px;
     opacity: 1;
@@ -1532,7 +1580,7 @@ html {
 
   .forum-thread-section-others {
     position: relative;
-    margin-bottom: 64px;
+    margin-bottom: 60px;
   }
 
   .thread-message {
@@ -1618,7 +1666,8 @@ html {
 
 @media (min-width: 1540px) {
   .container {
-    width: 1515px;
+    min-width: 1515px;
+    width: 100%;
   }
 
   .container__forum {

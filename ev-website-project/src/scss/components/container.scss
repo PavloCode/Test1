@@ -7,7 +7,8 @@
 
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    min-width: 750px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -15,13 +16,15 @@
 
 @media (min-width: 1200px) {
   .container {
-    width: 1190px;
+    min-width: 1190px;
+    width: 100%;
   }
 }
 
 @media (min-width: 1540px) {
   .container {
-    width: 1515px;
+    min-width: 1515px;
+    width: 100%;
   }
 }
 
